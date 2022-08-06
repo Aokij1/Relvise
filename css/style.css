@@ -51,8 +51,8 @@ body {
 /* ===============================ОГРАНИЧЕВАЮЩИЙ КОНТЕЙНЕР================================= */
 ._container {
    max-width: 1045px;
-   margin: 0px auto;
    padding: 0px 15px;
+   margin: 0px auto;
    box-sizing: content-box;
 }
 
