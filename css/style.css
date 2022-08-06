@@ -1,0 +1,332 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+html,
+body {
+   height: 100%;
+   line-height: 1;
+   font-size: 14px;
+   color: #252B42;
+   font-family: Montserrat;
+   font-weight: 500;
+}
+
+/* ================================================================ */
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+/* ===============================ОГРАНИЧЕВАЮЩИЙ КОНТЕЙНЕР================================= */
+._container {
+   max-width: 1045px;
+   padding: 0px 15px;
+   margin: 0px auto;
+   box-sizing: content-box;
+}
+
+._ibg {
+   position: relative;
+}
+
+._ibg img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+}
+
+/* ===============================ШАПКА================================= */
+.header {
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: 50;
+}
+
+.header__container {
+   display: flex;
+   min-height: 104px;
+   align-items: center;
+}
+
+@media(max-width: 479px) {
+   .header__container {
+      min-height: 70px;
+   }
+}
+
+.header__logo {
+   font-size: 24px;
+   font-weight: 700;
+   color: initial;
+}
+
+.header__menu {
+   margin: 0px 0px 0px 133px;
+}
+
+@media(max-width: 992px) {
+   .header__menu {
+      margin: 0px 0px 0px 80px;
+   }
+}
+
+@media(max-width: 767px) {
+   .header__menu {
+      margin: 0px 0px 0px 40px;
+   }
+}
+
+@media(max-width: 479px) {
+   .header__menu {
+      margin: 0px 0px 0px 20px;
+   }
+}
+
+.menu {
+   padding: 5px;
+}
+
+.menu__list {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.menu_item {}
+
+.menu_item:not(:last-child) {
+   margin: 0px 21px 0px 0px;
+}
+
+.menu__link {
+   color: #737373;
+   line-height: calc(24 / 14 * 100%);
+   font-family: 600;
+}
+
+@media(max-width: 479px) {
+   .menu__link {
+
+      font-size: 18px;
+   }
+}
+
+/* ===============================PAGE================================= */
+.page {
+   flex: 1 1 auto;
+
+}
+.page__main-block {}
+.page__servises{
+   position: relative;
+   z-index: 2;
+   margin: -111px 0px 0px 0px;
+
+}
+/* ===============================MAIN-BLOCK================================= */
+
+.main-block {
+   position: relative;
+}
+
+.main-block__container {}
+
+.main-block__body {
+   padding: 184px 0px 191px 0px;
+   position: relative;
+   z-index: 2;
+   max-width: 400px;
+}
+@media(max-width: 920px){
+   .main-block__body {
+      padding: 120px 0px 191px 0px;
+
+   }
+}
+.main-block__body>*:not(:last-child) {
+   margin: 0px 0px 35px 0px;
+}
+
+.main-block__title {
+   font-size: 58px;
+   font-weight: 800;
+   line-height: calc(80/58*100%);
+   letter-spacing: 0.2px;
+}
+@media(max-width: 479px){
+   .main-block__title{
+      font-size: 42px;
+   }
+}
+.main-block__text {
+   color: #737373;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: calc(30/20*100%);
+}
+
+.main-block__buttons {
+   display: flex;
+   flex-wrap: wrap;
+   margin: -10px 0;
+}
+
+.main-block__button {
+   border-radius: 37px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 5px 36px;
+   min-height: 48px;
+   letter-spacing: 0.2px;
+   font-weight: 700;
+   line-height: calc(28/14*100%);
+   margin: 10px 0;
+}
+@media(max-width: 479px){
+   .main-block__button{
+      flex: 1 1 100%;
+   }
+}
+@media(min-width: 479px){
+   .main-block__button:not(:last-child) {
+      margin-right: 10px;
+}
+}
+.main-block__button_orange {
+   background: #FF7B47;
+   color: #FFFFFF;
+}
+
+.main-block__button_border {
+   border: 1px solid #0D5C63;
+   color: #0D5C63;
+}
+
+.main-block__image {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+@media(max-width: 1300px){
+   .main-block__image img{
+      object-position: right;
+   } 
+}
+@media(max-width: 920px){
+   .main-block__image img{
+      opacity: 0.5;
+   } 
+}
+/* ===============================ПЛИТКИ(SERVISES)================================= */
+.servises{}
+.servises__container{}
+.servises__body{
+
+}
+@media(min-width: 670px){
+   .servises__body{
+      display: flex;
+      margin: 0px -15px -30px;
+      flex-wrap: wrap;
+   }
+}
+.servises__colum{
+   flex: 0 1 33.333%;
+   margin: 0px 0px 30px 0px;
+}
+@media(min-width: 670px){
+   .servises__colum{
+      padding: 0px 15px;
+   }
+}
+
+@media(max-width: 992px){
+   .servises__colum{
+      flex: 0 1 50%;
+      
+   }
+   .servises__colum:last-child{
+      flex: 1 1 100%;
+   }
+}
+
+.servises__item{
+   height: 100%;
+   background: #FFFFFF;
+   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+   padding: 35px;
+
+}
+.item-servises{}
+.item-servises_green{
+   background: #0D5C63;
+}
+.item-servises_green .item-servises__title{
+   color: #FFFFFF;
+}
+.item-servises_green .item-servises__text{
+   color: #FFFFFF;
+}
+.item-servises>*:not(:last-child){
+   margin: 0px 0px 10px 0px;
+}
+.item-servises__icon{}
+
+.item-servises__title{
+   font-size: 24px;
+   line-height: calc(32/24*100%);
+   font-weight: 700;
+   letter-spacing: 0.1px;
+   color: #252B42;
+}
+.item-servises__text{
+   line-height: calc(20/14*100%);
+   font-weight: 500;
+   letter-spacing: 0.2px;
+   color: #737373;
+}
+
+
+/* ===============================ПОДВАЛ================================= */
+.footer {}
