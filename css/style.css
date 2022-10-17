@@ -888,12 +888,3 @@ body {
 }
 /* ===============================ПОДВАЛ================================= */
 .footer {}
-.footer__body{
-   position: relative;
-   z-index: 1;
-   margin: 0px 30px;
-   padding: 30px 50px;
-   align-items: center;
-   background: #17213C;
-   border-radius: 20px;
-}
